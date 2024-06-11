@@ -1,0 +1,142 @@
+\doxysection{org.\+example.\+Map Class Reference}
+\hypertarget{classorg_1_1example_1_1_map}{}\label{classorg_1_1example_1_1_map}\index{org.example.Map@{org.example.Map}}
+
+
+Klasa \doxylink{classorg_1_1example_1_1_map}{Map} reprezentuje mapę, na której odbywa się symulacja.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classorg_1_1example_1_1_map_a1d1271c4383a161b889c03e9c0bbb571}\label{classorg_1_1example_1_1_map_a1d1271c4383a161b889c03e9c0bbb571} 
+{\bfseries Map} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{classorg_1_1example_1_1_map}{Map} inicjalizujący mapę oraz pozycje jednostek. \end{DoxyCompactList}\item 
+\Hypertarget{classorg_1_1example_1_1_map_a084928733ac904c20cdee6fb372eb1d5}\label{classorg_1_1example_1_1_map_a084928733ac904c20cdee6fb372eb1d5} 
+void {\bfseries print\+Map} ()
+\begin{DoxyCompactList}\small\item\em Wypisywanie mapy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_map_add0255331d3f902929574023be005b43}{place\+Unit}} (\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} unit, int x, int y)
+\begin{DoxyCompactList}\small\item\em Rozmieszczanie jednostek w trakcie symulacji. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classorg_1_1example_1_1_map_ac6bcd4880a297a7abdf1e117563b15aa}{get\+Symbol\+At}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Pobieranie symbolu przy pierwszym rozmieszczaniu jednostek. \end{DoxyCompactList}\item 
+\Hypertarget{classorg_1_1example_1_1_map_a8ad4c4add06ff874eae52b47c901ab03}\label{classorg_1_1example_1_1_map_a8ad4c4add06ff874eae52b47c901ab03} 
+void {\bfseries print\+Units} ()
+\begin{DoxyCompactList}\small\item\em Wypisywanie jednostek i ich statystyk. \end{DoxyCompactList}\item 
+\Hypertarget{classorg_1_1example_1_1_map_a77dcd9aab9cf0b478192edbd27925d5f}\label{classorg_1_1example_1_1_map_a77dcd9aab9cf0b478192edbd27925d5f} 
+void {\bfseries remove\+Dead\+Units} ()
+\begin{DoxyCompactList}\small\item\em Usuwanie jednostek, które mają 0 życia. \end{DoxyCompactList}\item 
+\Hypertarget{classorg_1_1example_1_1_map_a84c1bd211bebf541a5166f084f04d042}\label{classorg_1_1example_1_1_map_a84c1bd211bebf541a5166f084f04d042} 
+void {\bfseries move\+Units} ()
+\begin{DoxyCompactList}\small\item\em Przemieszczanie się jednostek. \end{DoxyCompactList}\item 
+List$<$ String $>$ \mbox{\hyperlink{classorg_1_1example_1_1_map_a5117f94f8dc79a018d5bb5f7ae223040}{get\+Remaining\+Fractions}} ()
+\begin{DoxyCompactList}\small\item\em Pobieranie nazw frakcji, które pozostały na mapie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} \mbox{\hyperlink{classorg_1_1example_1_1_map_ab89f319e4da1e119ea07f4abf0a387fc}{get\+Unit\+At\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Pobieranie jednostki na danej pozycji. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} $>$ \mbox{\hyperlink{classorg_1_1example_1_1_map_a202e628367d8cd46bb27614e9843b582}{get\+Adjacent\+Units}} (\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} unit)
+\begin{DoxyCompactList}\small\item\em Pobieranie jednostek, które znajdują się wokół jednostki docelowej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classorg_1_1example_1_1_map_ac505154e7a6586f2fb426b9927742ef3}\label{classorg_1_1example_1_1_map_ac505154e7a6586f2fb426b9927742ef3} 
+static final int {\bfseries MAP\+\_\+\+SIZE} = 20
+\begin{DoxyCompactList}\small\item\em Rozmiar mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \doxylink{classorg_1_1example_1_1_map}{Map} reprezentuje mapę, na której odbywa się symulacja. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_map_a202e628367d8cd46bb27614e9843b582}\index{org.example.Map@{org.example.Map}!getAdjacentUnits@{getAdjacentUnits}}
+\index{getAdjacentUnits@{getAdjacentUnits}!org.example.Map@{org.example.Map}}
+\doxysubsubsection{\texorpdfstring{getAdjacentUnits()}{getAdjacentUnits()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_map_a202e628367d8cd46bb27614e9843b582} 
+List$<$ \mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} $>$ org.\+example.\+Map.\+get\+Adjacent\+Units (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}}}]{unit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobieranie jednostek, które znajdują się wokół jednostki docelowej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & jednostka docelowa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lista jednostek znajdujących się wokół 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_map_a5117f94f8dc79a018d5bb5f7ae223040}\index{org.example.Map@{org.example.Map}!getRemainingFractions@{getRemainingFractions}}
+\index{getRemainingFractions@{getRemainingFractions}!org.example.Map@{org.example.Map}}
+\doxysubsubsection{\texorpdfstring{getRemainingFractions()}{getRemainingFractions()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_map_a5117f94f8dc79a018d5bb5f7ae223040} 
+List$<$ String $>$ org.\+example.\+Map.\+get\+Remaining\+Fractions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobieranie nazw frakcji, które pozostały na mapie. 
+
+\begin{DoxyReturn}{Returns}
+lista nazw frakcji 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_map_ac6bcd4880a297a7abdf1e117563b15aa}\index{org.example.Map@{org.example.Map}!getSymbolAt@{getSymbolAt}}
+\index{getSymbolAt@{getSymbolAt}!org.example.Map@{org.example.Map}}
+\doxysubsubsection{\texorpdfstring{getSymbolAt()}{getSymbolAt()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_map_ac6bcd4880a297a7abdf1e117563b15aa} 
+char org.\+example.\+Map.\+get\+Symbol\+At (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobieranie symbolu przy pierwszym rozmieszczaniu jednostek. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & współrzędna x \\
+\hline
+{\em y} & współrzędna y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+symbol obszaru 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_map_ab89f319e4da1e119ea07f4abf0a387fc}\index{org.example.Map@{org.example.Map}!getUnitAtPosition@{getUnitAtPosition}}
+\index{getUnitAtPosition@{getUnitAtPosition}!org.example.Map@{org.example.Map}}
+\doxysubsubsection{\texorpdfstring{getUnitAtPosition()}{getUnitAtPosition()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_map_ab89f319e4da1e119ea07f4abf0a387fc} 
+\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}} org.\+example.\+Map.\+get\+Unit\+At\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pobieranie jednostki na danej pozycji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & współrzędna x \\
+\hline
+{\em y} & współrzędna y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+jednostka na danej pozycji lub null jeśli brak 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_map_add0255331d3f902929574023be005b43}\index{org.example.Map@{org.example.Map}!placeUnit@{placeUnit}}
+\index{placeUnit@{placeUnit}!org.example.Map@{org.example.Map}}
+\doxysubsubsection{\texorpdfstring{placeUnit()}{placeUnit()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_map_add0255331d3f902929574023be005b43} 
+void org.\+example.\+Map.\+place\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1example_1_1_unit}{Unit}}}]{unit}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rozmieszczanie jednostek w trakcie symulacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & jednostka \\
+\hline
+{\em x} & współrzędna x \\
+\hline
+{\em y} & współrzędna y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bartl/\+Desktop/\+Studia/\+Programowanie/\+Etap 12/\+Kamiński\+\_\+\+Etap5/src/main/java/org/example/Map.\+java\end{DoxyCompactItemize}

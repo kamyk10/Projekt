@@ -1,0 +1,239 @@
+\doxysection{org.\+example.\+Unit Class Reference}
+\hypertarget{classorg_1_1example_1_1_unit}{}\label{classorg_1_1example_1_1_unit}\index{org.example.Unit@{org.example.Unit}}
+
+
+Klasa \doxylink{classorg_1_1example_1_1_unit}{Unit} reprezentuje jednostkę w grze, która posiada unikalny identyfikator, nazwę, frakcję, symbol oraz różne statystyki.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1example_1_1_unit_a9fc1ac6e4df2ce9994ccdad5f5c7ea8d}{Unit}} (String name, String fraction\+Name, char symbol, int base\+Strength, int health, int base\+Speed)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{classorg_1_1example_1_1_unit}{Unit}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_unit_aeda5558147682eb8a0b1d994fc479345}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca identyfikator jednostki. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1example_1_1_unit_abcee3b232cb1b2dbbf8725f1e0d3590b}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę jednostki. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classorg_1_1example_1_1_unit_a3df26c36cbfbd6a60f18b5d9b0664d72}{get\+Fraction\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę frakcji, do której należy jednostka. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classorg_1_1example_1_1_unit_a29bf2f641a893c6f7886cfe02366f6ca}{get\+Symbol}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca symbol jednostki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_unit_a8b5425eb7bdf9158aa1c8486c41cb5f4}{get\+Strength}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualną siłę jednostki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_unit_a48780091f893d129c8f61e3857f46a73}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualne zdrowie jednostki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_unit_ae863424931a65aa0796e94e2e37ad03a}{decrease\+Health}} (int amount)
+\begin{DoxyCompactList}\small\item\em Zmniejsza zdrowie jednostki o podaną wartość. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorg_1_1example_1_1_unit_abafa68438418ba24d605918fb917933b}{get\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualną prędkość jednostki. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classorg_1_1example_1_1_unit_a11e3b389b9061d598df2e5286e1fa260}{is\+Alive}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy jednostka jest żywa (zdrowie większe od 0). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_unit_a6e73336cb52a1f7dabe305d057773cab}{update\+Strength}} (char current\+Area\+Symbol)
+\begin{DoxyCompactList}\small\item\em Aktualizuje siłę jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Army\+\_\+of\+\_\+ice"{} mają zwiększoną siłę na polach oznaczonych symbolem \textquotesingle{}!\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_unit_a9447966b3025f1dc78d721b9151dbbc5}{update\+Speed}} (char current\+Area\+Symbol)
+\begin{DoxyCompactList}\small\item\em Aktualizuje prędkość jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Forest\+\_\+\+Guards"{} mają zwiększoną prędkość na polach oznaczonych symbolem \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1_unit_a38bfa2e1ca68192a3d660055fa9b7e06}{update\+Health}} (char current\+Area\+Symbol)
+\begin{DoxyCompactList}\small\item\em Aktualizuje zdrowie jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Brotherhood\+\_\+of\+\_\+magicians"{} zwiększają zdrowie na polach oznaczonych symbolem \textquotesingle{}\texorpdfstring{$\sim$}{\string~}\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa \doxylink{classorg_1_1example_1_1_unit}{Unit} reprezentuje jednostkę w grze, która posiada unikalny identyfikator, nazwę, frakcję, symbol oraz różne statystyki. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classorg_1_1example_1_1_unit_a9fc1ac6e4df2ce9994ccdad5f5c7ea8d}\index{org.example.Unit@{org.example.Unit}!Unit@{Unit}}
+\index{Unit@{Unit}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{Unit()}{Unit()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a9fc1ac6e4df2ce9994ccdad5f5c7ea8d} 
+org.\+example.\+Unit.\+Unit (\begin{DoxyParamCaption}\item[{String}]{name}{, }\item[{String}]{fraction\+Name}{, }\item[{char}]{symbol}{, }\item[{int}]{base\+Strength}{, }\item[{int}]{health}{, }\item[{int}]{base\+Speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor klasy \doxylink{classorg_1_1example_1_1_unit}{Unit}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nazwa jednostki \\
+\hline
+{\em fraction\+Name} & nazwa frakcji, do której należy jednostka \\
+\hline
+{\em symbol} & symbol reprezentujący jednostkę \\
+\hline
+{\em base\+Strength} & podstawowa siła jednostki \\
+\hline
+{\em health} & zdrowie jednostki \\
+\hline
+{\em base\+Speed} & podstawowa prędkość jednostki \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1_unit_ae863424931a65aa0796e94e2e37ad03a}\index{org.example.Unit@{org.example.Unit}!decreaseHealth@{decreaseHealth}}
+\index{decreaseHealth@{decreaseHealth}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{decreaseHealth()}{decreaseHealth()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_ae863424931a65aa0796e94e2e37ad03a} 
+void org.\+example.\+Unit.\+decrease\+Health (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmniejsza zdrowie jednostki o podaną wartość. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & ilość, o którą należy zmniejszyć zdrowie jednostki \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classorg_1_1example_1_1_unit_a3df26c36cbfbd6a60f18b5d9b0664d72}\index{org.example.Unit@{org.example.Unit}!getFractionName@{getFractionName}}
+\index{getFractionName@{getFractionName}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getFractionName()}{getFractionName()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a3df26c36cbfbd6a60f18b5d9b0664d72} 
+String org.\+example.\+Unit.\+get\+Fraction\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca nazwę frakcji, do której należy jednostka. 
+
+\begin{DoxyReturn}{Returns}
+nazwa frakcji jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_a48780091f893d129c8f61e3857f46a73}\index{org.example.Unit@{org.example.Unit}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a48780091f893d129c8f61e3857f46a73} 
+int org.\+example.\+Unit.\+get\+Health (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca aktualne zdrowie jednostki. 
+
+\begin{DoxyReturn}{Returns}
+aktualne zdrowie jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_aeda5558147682eb8a0b1d994fc479345}\index{org.example.Unit@{org.example.Unit}!getId@{getId}}
+\index{getId@{getId}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_aeda5558147682eb8a0b1d994fc479345} 
+int org.\+example.\+Unit.\+get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca identyfikator jednostki. 
+
+\begin{DoxyReturn}{Returns}
+identyfikator jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_abcee3b232cb1b2dbbf8725f1e0d3590b}\index{org.example.Unit@{org.example.Unit}!getName@{getName}}
+\index{getName@{getName}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_abcee3b232cb1b2dbbf8725f1e0d3590b} 
+String org.\+example.\+Unit.\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca nazwę jednostki. 
+
+\begin{DoxyReturn}{Returns}
+nazwa jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_abafa68438418ba24d605918fb917933b}\index{org.example.Unit@{org.example.Unit}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_abafa68438418ba24d605918fb917933b} 
+int org.\+example.\+Unit.\+get\+Speed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca aktualną prędkość jednostki. 
+
+\begin{DoxyReturn}{Returns}
+aktualna prędkość jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_a8b5425eb7bdf9158aa1c8486c41cb5f4}\index{org.example.Unit@{org.example.Unit}!getStrength@{getStrength}}
+\index{getStrength@{getStrength}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getStrength()}{getStrength()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a8b5425eb7bdf9158aa1c8486c41cb5f4} 
+int org.\+example.\+Unit.\+get\+Strength (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca aktualną siłę jednostki. 
+
+\begin{DoxyReturn}{Returns}
+aktualna siła jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_a29bf2f641a893c6f7886cfe02366f6ca}\index{org.example.Unit@{org.example.Unit}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a29bf2f641a893c6f7886cfe02366f6ca} 
+char org.\+example.\+Unit.\+get\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca symbol jednostki. 
+
+\begin{DoxyReturn}{Returns}
+symbol jednostki 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_a11e3b389b9061d598df2e5286e1fa260}\index{org.example.Unit@{org.example.Unit}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a11e3b389b9061d598df2e5286e1fa260} 
+boolean org.\+example.\+Unit.\+is\+Alive (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy jednostka jest żywa (zdrowie większe od 0). 
+
+\begin{DoxyReturn}{Returns}
+true, jeśli jednostka jest żywa, w przeciwnym razie false 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1_unit_a38bfa2e1ca68192a3d660055fa9b7e06}\index{org.example.Unit@{org.example.Unit}!updateHealth@{updateHealth}}
+\index{updateHealth@{updateHealth}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{updateHealth()}{updateHealth()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a38bfa2e1ca68192a3d660055fa9b7e06} 
+void org.\+example.\+Unit.\+update\+Health (\begin{DoxyParamCaption}\item[{char}]{current\+Area\+Symbol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje zdrowie jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Brotherhood\+\_\+of\+\_\+magicians"{} zwiększają zdrowie na polach oznaczonych symbolem \textquotesingle{}\texorpdfstring{$\sim$}{\string~}\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Area\+Symbol} & symbol pola, na którym znajduje się jednostka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classorg_1_1example_1_1_unit_a9447966b3025f1dc78d721b9151dbbc5}\index{org.example.Unit@{org.example.Unit}!updateSpeed@{updateSpeed}}
+\index{updateSpeed@{updateSpeed}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{updateSpeed()}{updateSpeed()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a9447966b3025f1dc78d721b9151dbbc5} 
+void org.\+example.\+Unit.\+update\+Speed (\begin{DoxyParamCaption}\item[{char}]{current\+Area\+Symbol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje prędkość jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Forest\+\_\+\+Guards"{} mają zwiększoną prędkość na polach oznaczonych symbolem \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Area\+Symbol} & symbol pola, na którym znajduje się jednostka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classorg_1_1example_1_1_unit_a6e73336cb52a1f7dabe305d057773cab}\index{org.example.Unit@{org.example.Unit}!updateStrength@{updateStrength}}
+\index{updateStrength@{updateStrength}!org.example.Unit@{org.example.Unit}}
+\doxysubsubsection{\texorpdfstring{updateStrength()}{updateStrength()}}
+{\footnotesize\ttfamily \label{classorg_1_1example_1_1_unit_a6e73336cb52a1f7dabe305d057773cab} 
+void org.\+example.\+Unit.\+update\+Strength (\begin{DoxyParamCaption}\item[{char}]{current\+Area\+Symbol}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizuje siłę jednostki w zależności od jej lokalizacji. Jednostki z frakcji "{}\+Army\+\_\+of\+\_\+ice"{} mają zwiększoną siłę na polach oznaczonych symbolem \textquotesingle{}!\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Area\+Symbol} & symbol pola, na którym znajduje się jednostka \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bartl/\+Desktop/\+Studia/\+Programowanie/\+Etap 12/\+Kamiński\+\_\+\+Etap5/src/main/java/org/example/Unit.\+java\end{DoxyCompactItemize}
